@@ -55,3 +55,25 @@ const typeDefs = gql`
         projects: [Project!]!
     }
 `
+const dummyUser = [
+    {
+        firstName: "John",
+        lastName: "Doe",
+        email: "johndoe@gmail.com",
+        image: "<file-location>",
+        description: "Hi, my name is John Doe!"
+    }
+]
+
+const resolvers = {
+    Query: {
+        users: () => dummyUser,
+    }
+}
+
+const server = new ApolloServer({ typeDefs, resolvers })
+
+server.listen()
+.then(({ url }) => {
+    console.log(`🚀  Server ready at ${url}`)
+})
