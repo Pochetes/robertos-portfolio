@@ -47,7 +47,7 @@ const typeDefs = gql`
     }
 
     type Query {
-        users: [User!]!
+        user: [User!]!
         contacts: [Contact!]!
         skills: [Skill!]!
         experiences: [Experience!]!
@@ -56,4 +56,4 @@ const typeDefs = gql`
     }
 `
 
-export { typeDefs }
+export default typeDefs

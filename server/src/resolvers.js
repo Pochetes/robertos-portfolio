@@ -1,10 +1,24 @@
-import { dummyContacts, dummyUser } from "./dummyData.js"
-
 const resolvers = {
     Query: {
-        users: () => dummyUser,
-        contacts: () => dummyContacts
+        user: (_, __, { dataSources }) => {
+            return dataSources.portfolioAPI.getUser()
+        },
+        contacts: (_, __, { dataSources }) => {
+            return dataSources.portfolioAPI.getContacts()
+        },
+        skills: (_, __, { dataSources }) => {
+            return dataSources.portfolioAPI.getSkills()
+        },
+        experiences: (_, __, { dataSources }) => {
+            return dataSources.portfolioAPI.getExperiences()
+        },
+        interests: (_, __, { dataSources }) => {
+            return dataSources.portfolioAPI.getInterests()
+        },
+        projects: (_, __, { dataSources }) => {
+            return dataSources.portfolioAPI.getProjects()
+        },
     }
 }
 
-export { resolvers }
+export default resolvers
