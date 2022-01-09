@@ -16,8 +16,18 @@ class portfolioAPI extends RESTDataSource {
         return res
     }
 
+    async getContact(title) {
+        const res = await this.get(`contacts/${title}`)
+        return res
+    }
+
     async getSkills() { 
         const res = await this.get('skills')
+        return res
+    }
+
+    async getSkill(technology) {
+        const res = await this.get(`skills/${technology}`)
         return res
     }
 
@@ -26,13 +36,28 @@ class portfolioAPI extends RESTDataSource {
         return res
     }
 
+    async getExperience(experienceId) {
+        const res = await this.get(`experiences/${experienceId}`)
+        return res
+    }
+
     async getInterests() {
         const res = await this.get('interests')
         return res
     }
 
+    async getInterest(interestId) {
+        const res = await this.get(`interests/${interestId}`)
+        return res
+    }
+
     async getProjects() {
         const res = await this.get('projects')
+        return res
+    }
+
+    async getProject(projectId) {
+        const res = await this.get(`projects/${projectId}`)
         return res
     }
 }
