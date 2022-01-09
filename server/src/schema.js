@@ -49,15 +49,10 @@ const typeDefs = gql`
     type Query {
         user: [User!]!
         contacts: [Contact!]!
-        contact(title: String!): Contact!
         skills: [Skill!]!
-        skill(technology: String!): Skill!
         experiences: [Experience!]!
-        experience(id: ID!): Experience!
         interests: [Interest!]!
-        interest(id: ID!): Interest!
         projects: [Project!]!
-        project(id: ID!): Project!
     }
 `
 
