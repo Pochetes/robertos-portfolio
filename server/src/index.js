@@ -1,79 +1,22 @@
-import { ApolloServer, gql } from 'apollo-server'
+import { ApolloServer } from 'apollo-server'
+import { typeDefs } from './schema.js'
+import { resolvers } from './resolvers.js'
+import { dummyUser, dummyContacts } from './dummyData.js'
 
-const typeDefs = gql`
-    # Fundamental details about getting to know me 
-    type User {
-        firstName: String!
-        lastName: String!
-        email: String!
-        image: String!
-        description: String!
-    }
+async function startApolloServer(typeDefs, resolvers) {
+    const server = new ApolloServer({
+        typeDefs,
+        resolvers,
+        dummyUser,
+        dummyContacts,
+    })
 
-    # Here will be my social media links
-    type Contact {
-        title: String!
-        image: String!
-        link: String!
-    }
-
-    # This section holds the technical skills that I possess
-    type Skill {
-        technology: String!
-        image: String!
-    }
-
-    # Here will be the experiences that I've had throughout my journey pursuing Software Engineering
-    type Experience {
-        company: String!
-        position: String!
-        dateStarted: String!
-        dateEnded: String!
-        image: String!
-    }
-
-    # This will retrieve my interests in and outside the technology world
-    type Interest {
-        topic: String!
-        image: String!
-    }
-
-    # This will return my software related projects that I have worked on
-    type Project {
-        title: String!
-        description: String!
-        image: String!
-        link: String!
-    }
-
-    type Query {
-        users: [User!]!
-        contacts: [Contact!]!
-        skills: [Skill!]!
-        experienes: [Experience!]!
-        interests: [Interest!]!
-        projects: [Project!]!
-    }
-`
-const dummyUser = [
-    {
-        firstName: "John",
-        lastName: "Doe",
-        email: "johndoe@gmail.com",
-        image: "<file-location>",
-        description: "Hi, my name is John Doe!"
-    }
-]
-
-const resolvers = {
-    Query: {
-        users: () => dummyUser,
-    }
+    const { url, port } = await server.listen({port: process.env.PORT || 4000})
+    console.log(`
+        🚀 Server is running
+        🔉 Listening on port ${port}
+        📭 Query at ${url}
+    `)
 }
 
-const server = new ApolloServer({ typeDefs, resolvers })
-
-server.listen()
-.then(({ url }) => {
-    console.log(`🚀  Server ready at ${url}`)
-})
+startApolloServer(typeDefs, resolvers)
