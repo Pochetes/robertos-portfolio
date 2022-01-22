@@ -9,7 +9,7 @@ module.exports = {
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.js
     siteTitle: `Roberto M`,
     siteTitleAlt: `Roberto Martinez`,
-    siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
+    siteHeadline: `Roberto Martinez's Portfolio`,
     siteUrl: `http://localhost:8000`,
     siteDescription: `The amazing life of Roberto Martinez and his journey as an engineer and innovator.`,
     siteLanguage: `en`,
@@ -18,16 +18,16 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `@lekoarts/gatsby-theme-cara`,
+      resolve: `gatsby-plugin-theme-ui`,
       // See the theme's README for all available options
       options: {},
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        name: `gatsby-plugin-theme-ui`,
+        short_name: `theme-ui`,
+        description: `Smooth and powerful portfolio website of Roberto Martinez`,
         start_url: `/`,
         background_color: `#141835`,
         // This will impact how browsers show your PWA/website
@@ -57,5 +57,20 @@ module.exports = {
         openAnalyzer: false,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/components/Layout.tsx")
+        }
+      }
+    }
   ].filter(Boolean),
 }
