@@ -18,15 +18,10 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-theme-ui`,
-      // See the theme's README for all available options
-      options: {},
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-plugin-theme-ui`,
-        short_name: `theme-ui`,
+        name: `Roberto Martinez Portfolio`,
+        short_name: `portfolio`,
         description: `Smooth and powerful portfolio website of Roberto Martinez`,
         start_url: `/`,
         background_color: `#141835`,
@@ -48,10 +43,10 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-gatsby-cloud`,
     shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
       options: {
+        devMode: true,
         analyzerMode: `static`,
         reportFilename: `_bundle.html`,
         openAnalyzer: false,
@@ -71,6 +66,7 @@ module.exports = {
           default: require.resolve("./src/components/Layout/Layout.tsx")
         }
       }
-    }
+    },
+    `gatsby-plugin-postcss`
   ].filter(Boolean),
 }

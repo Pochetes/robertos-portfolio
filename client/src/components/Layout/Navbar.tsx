@@ -1,10 +1,10 @@
-import React from 'react';
+import * as React from 'react';
 
 const Navbar = () => (
     <nav>
         <div>
             <a href="#">
-                <span>Roberto</span>
+                <span className="text-center">Roberto</span>
             </a>
             <div>
                 <ul>

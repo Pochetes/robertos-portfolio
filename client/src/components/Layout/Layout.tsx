@@ -1,5 +1,4 @@
 import * as React from "react"
-import { get } from "theme-ui"
 import { Global } from "@emotion/react"
 
 import Navbar from "./Navbar"
@@ -37,8 +36,8 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
                     display: `none`,
                 },
                 "::selection": {
-                    backgroundColor: get(t, `colors.primary`),
-                    color: get(t, `colors.background`),
+                    backgroundColor: `red`,
+                    color: `black`,
                 },
             })}
         />
