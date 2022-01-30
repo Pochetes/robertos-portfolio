@@ -1,13 +1,18 @@
-import * as React from 'react';
+import * as React from 'react'
+
+import {
+    lightModeImg,
+    darkModeImg,
+} from '../../../static/'
 
 const Navbar = () => (
     <nav>
         <div>
             <a href="#">
-                <span className="text-center">Roberto</span>
+                <span className="text-left">Roberto</span>
             </a>
             <div>
-                <ul>
+                <ul className="text-center">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
@@ -17,7 +22,8 @@ const Navbar = () => (
                 </ul>
             </div>
             <div>
-                LD-btn
+                <img src={lightModeImg} alt="light mode icon" />
+                <img src={darkModeImg} alt="dark mode icon" />
             </div>
         </div>
     </nav>
