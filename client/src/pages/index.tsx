@@ -1,12 +1,10 @@
 import * as React from "react"
-import Layout from "../components/Layout/Layout"
-import Hero from "../components/Hero"
-import About from "../components/About"
-import Projects from "../components/Projects"
-import Experiences from "../components/Experiences"
-import Skills from "../components/Skills"
+import Hero from "../components/Hero/Hero"
+import About from "../components/About/About"
+import Projects from "../components/Projects/Projects"
+import Experiences from "../components/Experiences/Experiences"
 import Extras from "../components/Extras"
-import ContactPage from "../components/ContactPage"
+import ContactPage from "../components/ContactPage/ContactPage"
 
 const App = () => (
     <>
@@ -14,7 +12,6 @@ const App = () => (
         <About />
         <Projects />
         <Experiences />
-        <Skills />
         <Extras />
         <ContactPage />
     </>

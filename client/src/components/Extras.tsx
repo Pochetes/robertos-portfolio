@@ -3,7 +3,9 @@ import Layout from "./Layout/Layout"
 
 const Extras = () => (
     <Layout>
-        Extras Section
+        <section>
+            <h1>here is ... cool stuff</h1>
+        </section>
     </Layout>
 )
 
