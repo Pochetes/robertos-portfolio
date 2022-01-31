@@ -1,7 +1,10 @@
 import * as React from "react"
+import Layout from "./Layout/Layout"
 
 const Skills = () => (
-    <h1>Skills Section</h1>
+    <Layout>
+        Skills Section
+    </Layout>
 )
 
 export default Skills

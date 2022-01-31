@@ -1,7 +1,10 @@
 import * as React from "react"
+import Layout from "./Layout/Layout"
 
 const About = () => (
-    <h1>About Section</h1>
+    <Layout>
+        About Section
+    </Layout>
 )
 
 export default About

@@ -1,7 +1,10 @@
 import * as React from "react"
+import Layout from "./Layout/Layout"
 
 const Experiences = () => (
-    <h1>Experiences Section</h1>
+    <Layout>
+        Experiences Section
+    </Layout>
 )
 
 export default Experiences

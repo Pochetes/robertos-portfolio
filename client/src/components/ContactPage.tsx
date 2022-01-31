@@ -1,7 +1,10 @@
 import * as React from "react"
+import Layout from "./Layout/Layout"
 
 const ContactPage = () => (
-    <h1>ContactPage Section</h1>
+    <Layout>
+        ContactPage Section
+    </Layout>
 )
 
 export default ContactPage

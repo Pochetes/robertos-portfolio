@@ -1,7 +1,10 @@
 import * as React from "react"
+import Layout from "./Layout/Layout"
 
 const Extras = () => (
-    <h1>Extras Section</h1>
+    <Layout>
+        Extras Section
+    </Layout>
 )
 
 export default Extras

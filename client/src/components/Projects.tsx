@@ -1,7 +1,10 @@
 import * as React from "react"
+import Layout from "./Layout/Layout"
 
 const Projects = () => (
-    <h1>Projects Section</h1>
+    <Layout>
+        Projects Section
+    </Layout>
 )
 
 export default Projects

@@ -9,7 +9,7 @@ import Extras from "../components/Extras"
 import ContactPage from "../components/ContactPage"
 
 const App = () => (
-    <Layout>
+    <>
         <Hero />
         <About />
         <Projects />
@@ -17,7 +17,7 @@ const App = () => (
         <Skills />
         <Extras />
         <ContactPage />
-    </Layout>
+    </>
 )
 
 export default App
