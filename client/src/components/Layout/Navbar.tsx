@@ -1,29 +1,25 @@
 import * as React from 'react'
-
-import {
-    lightModeImg,
-    darkModeImg,
-} from '../../../static/'
+import { SunIcon, MoonIcon } from '@heroicons/react/solid'
 
 const Navbar = () => (
-    <nav>
-        <div className="flex flex-row flex-auto">
-            <a className="basis-1/3" href="#">
-                <span className="text-left">Roberto</span>
-            </a>
-            <div className="basis-1/3">
-                <ul className="text-center flex flex-row flex-auto">
-                    <li className="basis-1/12"><a href="#">Home</a></li>
-                    <li className="basis-1/12"><a href="#">About</a></li>
-                    <li className="basis-1/12"><a href="#">Projects</a></li>
-                    <li className="basis-1/12"><a href="#">Resume</a></li>
-                    <li className="basis-1/12"><a href="#">Extras</a></li>
-                    <li className="basis-1/12"><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div className="basis-1/3">
-                <img src={lightModeImg} alt="light mode icon" />
-                <img src={darkModeImg} alt="dark mode icon" />
+    <nav className="h-20 fixed left-0 right-0">
+        <div className="mx-auto mt-6 px-6 text-2xl">
+            <div className="flex justify-between">
+                <div className="">
+                    <a href="#">Roberto</a>
+                </div>
+                <div className="flex justify-evenly px-10 space-x-14 tracking-normal">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Resume</a>
+                    <a href="#">Extras</a>
+                    <a href="#">Contacts</a>
+                </div>
+                <div>
+                    {/* <SunIcon className="h-8 w-8 fill-textWhite"/> */}
+                    <MoonIcon className="h-8 w-8 fill-textWhite"/>
+                </div>
             </div>
         </div>
     </nav>
