@@ -14,6 +14,9 @@ module.exports = {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
+    minWidth: {
+      '1/2': '50%',
+    },
     extend: {
       colors: {
         transparent: 'transparent',
@@ -69,5 +72,8 @@ module.exports = {
       }
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio')
+  ],
 }
