@@ -1,13 +1,9 @@
-import lightModeImg from './ld-mode/light.png'
-import darkModeImg from './ld-mode/dark.png'
-import github from './social/github.png'
-import linkedin from './social/linkedin.png'
-import twitter from './social/twitter.png'
+import github from './social/github.svg'
+import linkedin from './social/linkedin.svg'
+import twitter from './social/twitter.svg'
 import scrollingArrow from './arrow/scrolling-arrow.svg'
 
 export {
-    lightModeImg,
-    darkModeImg,
     github,
     linkedin,
     twitter,
