@@ -7,10 +7,10 @@ import {
 } from '../../../static'
 
 const Contact = () => (
-    <div>
-        <img src={github} alt="github image" />
-        <img src={linkedin} alt="linkedin image" />
-        <img src={twitter} alt="twitter image" />
+    <div className="p-3 flex flex-row space-x-10">
+        <a href="https://www.github.com/Pochetes" target="_blank"><img className="scale-150" src={github} alt="github image" /></a>
+        <a href="https://www.linkedin.com/in/RobertoMartinez21" target="_blank"><img className="scale-150" src={linkedin} alt="linkedin image" /></a>
+        <a href="https://www.twitter.com/iamrobmart" target="_blank"><img className="scale-150" src={twitter} alt="twitter image" /></a>
     </div>
 )
 
