@@ -7,9 +7,9 @@ type LayoutProps = {
     className?: string
 }
 
-const Layout = ({ children, className = "flex-grow container mx-auto px-4 sm:px-6" }: LayoutProps) => (
+const Layout = ({ children, className = "" }: LayoutProps) => (
     <React.Fragment>
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col font-sans font-semibold text-textWhite bg-sadBlue">
             <Navbar />
             <main className={className}>{children}</main>
             <CopyRight />
