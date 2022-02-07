@@ -26,11 +26,15 @@ module.exports = {
         blueyGrey: '#f3f3fb',
         blandGrey: '#9494a3',
         grey: '#8a94a4',
-        airbnbRed: '#ff5a5f'
+        airbnbRed: '#ff5a5f',
       },
       spacing: {
         px: '1px',
         '0': '0',
+        '1/5': '0.2rem',
+        '2/5': '0.4rem',
+        '3/5': '0.6rem',
+        '4/5': '0.8rem',
         '0.5': '0.125rem',
         '1': '0.25rem',
         '1.5': '0.375rem',
