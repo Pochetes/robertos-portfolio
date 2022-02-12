@@ -7,7 +7,9 @@ import algo from './crypto/algo.svg'
 import eth from './crypto/eth.svg'
 import sol from './crypto/sol.svg'
 import xlm from './crypto/xlm.svg'
-import aboutBG from './aboutbg.jpeg'
+import cpu from "./interests/cpu.svg"
+import suitSpade from "./interests/suit-spade.svg"
+import airplane from "./interests/airplane.svg"
 
 export {
     github,
@@ -19,5 +21,7 @@ export {
     eth,
     sol,
     xlm,
-    aboutBG
+    cpu,
+    suitSpade,
+    airplane
 }
