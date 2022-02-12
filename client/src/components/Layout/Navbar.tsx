@@ -8,7 +8,7 @@ const Navbar = () => (
                 <div className="p-1 sm:px-3 sm:py-2 ">
                     <a href="#">Roberto</a>
                 </div>
-                <div className="flex justify-evenly px-10 space-x-14">
+                <div className="flex justify-evenly px-10 space-x-14 text-shadow-main">
                     <a className="p-1 sm:px-3 sm:py-2" href="#">Home</a>
                     <a className="p-1 sm:px-3 sm:py-2" href="#">About</a>
                     <a className="p-1 sm:px-3 sm:py-2" href="#">Projects</a>

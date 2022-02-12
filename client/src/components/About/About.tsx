@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from "../Layout/Layout"
 import ColoredBorderImg from "../../atoms/coloredBorderImg"
+import { sol, cpu, suitSpade, airplane } from "../../../static/"
 
 const About = () => (
     <section>
@@ -15,7 +16,8 @@ const About = () => (
                     viaColor=""
                     toColor="to-emerald-400"
                     mode="bg-black"
-                    image="https://www.svgrepo.com/show/354884/code.svg"
+                    image={sol}
+                    imageSize="scale-125"
                     />
                     <ColoredBorderImg 
                     width="w-32"
@@ -25,7 +27,8 @@ const About = () => (
                     viaColor="via-fuchsia-500"
                     toColor="to-indigo-500"
                     mode="bg-black"
-                    image="https://www.svgrepo.com/show/354884/code.svg"
+                    image={cpu}
+                    imageSize="scale-75"
                     />
                     <ColoredBorderImg 
                     width="w-44"
@@ -35,7 +38,8 @@ const About = () => (
                     viaColor="via-fuchsia-500"
                     toColor="to-indigo-500"
                     mode="bg-black"
-                    image="https://www.svgrepo.com/show/354884/code.svg"
+                    image={suitSpade}
+                    imageSize="scale-75"
                     />
                     <ColoredBorderImg 
                     width="w-52"
@@ -45,18 +49,21 @@ const About = () => (
                     viaColor=""
                     toColor="to-emerald-400"
                     mode="bg-black"
-                    image="https://www.svgrepo.com/show/354884/code.svg"
+                    image={airplane}
+                    imageSize="scale-100"
                     />
                 </div>
                 <div className="min-w-1/2 flex flex-col justify-center items-center">
                     <div className="p-10">
                         <div>
-                            <h1 className="font-extrabold leading-tight font-3xl text-4xl"
+                            <h1 className="font-extrabold leading-tight font-3xl text-4xl text-shadow-main"
                             >
-                                I am an undergraduate sophomore studying computer science at Florida International University.
-                                Currently building a crypto tipping platform and tinkering on Solana. I practice jiu-jitsu
-                                and exercise on my free time.
+                                I talk about defi, lean startups and ownership as a first-class citizen of the internet.
                             </h1>
+                            <br />
+                            <h2 className="font-extrabold leading-tight text-2xl text-gray-500 text-shadow-alt">
+                                   Currently building a crypto payments service on Solana. Outside of work, I love exercising, practicing jiu-jitsu and traveling. 
+                            </h2>
                         </div>
                     </div>
                 </div>
