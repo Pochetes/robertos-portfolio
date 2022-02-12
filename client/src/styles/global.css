@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@responsive {
+  .text-shadow-main {
+    text-shadow: 0 2px 4px rgba(255,255,255,0.30);
+  }
+
+  .text-shadow-alt {
+    text-shadow: 0 2px 4px rgb(107, 114, 128, 0.30);
+  }
+}
