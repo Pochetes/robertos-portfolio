@@ -9,7 +9,7 @@ type LayoutProps = {
 
 const Layout = ({ children, className = "" }: LayoutProps) => (
     <React.Fragment>
-        <div className="min-h-screen flex flex-col font-sans font-bold bg-black text-white">
+        <div className="min-h-screen min-w-screen overflow-hidden font-sans font-bold bg-black text-white">
             <Navbar />
             <main className={className}>{children}</main>
             <CopyRight />
