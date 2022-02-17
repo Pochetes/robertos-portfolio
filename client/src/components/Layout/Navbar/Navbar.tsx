@@ -4,13 +4,18 @@ import Hamburger from './Hamburger';
 
 const Navbar = () => {
     const [hamburgerMenu, setHamburgerMenu] = useState<boolean>(false);
+    const [theme, setTheme] = useState<boolean>(false);
 
     const handleMenuToggle = () => {
         setHamburgerMenu(prev => !prev)
     }
 
+    const handleThemeToggle = () => {
+        setTheme(prev => !prev)
+    }
+
     return (
-        <header className="py-6 px-6 sticky top-0 z-50">
+        <header className="py-6 px-6">
             <div>
                 <div className="flex justify-between font-semibold">
                     <div className="lg:hidden">
@@ -38,8 +43,16 @@ const Navbar = () => {
                         <a className="p-2" href="#">Contacts</a>
                     </nav>
                     <div>
-                        {/* <SunIcon className="h-8"/> */}
-                        <MoonIcon className="h-8"/>
+                        <button
+                        type="button"
+                        onClick={handleThemeToggle}
+                        >
+                            {
+                                theme
+                                ? <SunIcon className="h-8"/>
+                                : <MoonIcon className="h-8"/>
+                            }
+                        </button>
                     </div>
                 </div>
             </div>
