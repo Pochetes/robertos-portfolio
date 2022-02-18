@@ -7,37 +7,47 @@ import ThemeButton from '../../../atoms/ThemeButton'
 const HamburgerMenu = () => (
     <Transition
         as={Fragment}
-        enter="transition ease-out duration-100 transform"
+        enter="duration-150 ease-out"
         enterFrom="opacity-0 scale-95"
         enterTo="opacity-100 scale-100"
-        leave="transition ease-in duration-75 transform"
+        leave="duration-100 ease-in"
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
+    >
+        <Popover.Panel
+            focus
+            className="fixed z-10 top-0 inset-x-0 transition transform origin-top-right lg:hidden"
         >
-            <Popover.Panel
-                focus
-                className="absolute top-0 z-10 inset-x-0 min-w-screen min-h-screen bg-black lg:hidden"
-            >
-            <div className="flex px-6 py-6 justify-between">
-                <div className="lg:hidden">
-                    <Popover.Button>
-                        <span className="sr-only">Close main menu</span>
-                        <XIcon className="h-8" aria-hidden="true" />
-                    </Popover.Button>
+            <div className="shadow-md min-h-screen bg-black ring-1 ring-red-400 ring-opacity-5 overflow-hidden">
+                <div className="px-5 pt-4 flex items-center justify-between">
+                    <div className="-mr-2">
+                        <Popover.Button className="p-2">
+                            <span className="sr-only">Close main menu</span>
+                            <XIcon className="h-8" aria-hidden="true" />
+                        </Popover.Button>
+                    </div>
+                    <div>
+                        <img
+                            className="h-10 w-auto"
+                            src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div className="pt-2">
+                        <ThemeButton />
+                    </div>
                 </div>
-                <div className="p-2">
-                    <a href="#">Roberto Menu</a>
-                </div>
-                <ThemeButton />
-            </div>
-            <div className="min-h-screen bg-black">
-                <nav className="flex flex-col pt-2 items-center">
-                    {Navlinks.map((link) => (
-                        <a className="p-8 text-xl sm:text-2xl" key={link.name} href="https://www.twitter.com/iamrobmart"/*href={link.href}*/>
-                            {link.name}
-                        </a>
+                <div className="px-2 pt-2 pb-3 space-y-1">
+                    {Navlinks.map((item) => (
+                    <a
+                        key={item.name}
+                        href={item.href}
+                        className="flex flex-col items-center p-8 text-xl sm:text-2xl rounded-md"
+                    >
+                        {item.name}
+                    </a>
                     ))}
-                </nav>
+                </div>
             </div>
         </Popover.Panel>
     </Transition>

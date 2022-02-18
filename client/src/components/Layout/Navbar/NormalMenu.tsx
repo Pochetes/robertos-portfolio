@@ -13,7 +13,13 @@ const NormalMenu = () => (
                     <MenuIcon className="h-8" aria-hidden="true" />
                 </Popover.Button>
             </div>
-            <a href="#">Roberto</a>
+            <div>
+                <img
+                    className="h-8 w-auto"
+                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                    alt=""
+                />
+            </div>
             <nav className="hidden lg:flex lg:justify-between lg:text-shadow-main lg:space-x-10">
                 {Navlinks.map((item) => (
                     <a key={item.id} href={item.href} className="p-2">
@@ -21,7 +27,9 @@ const NormalMenu = () => (
                     </a>
                 ))}
             </nav>
-            <ThemeButton />
+            <div className="pt-2">
+                <ThemeButton />
+            </div>
         </div>
     </div>
 )
