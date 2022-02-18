@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { SunIcon, MoonIcon } from '@heroicons/react/solid'
-import ThemeContext from '../contexts/themeContexts';
+import ThemeContext from '../contexts/themeContext';
 
 const ThemeButton = () => {
     const { theme, setTheme } = useContext(ThemeContext);

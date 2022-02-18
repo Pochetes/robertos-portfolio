@@ -1,10 +1,10 @@
 const Navlinks = [
-    { name: "Home", href: "#"},
-    { name: "About", href: "#"},
-    { name: "Projects", href: "#"},
-    { name: "Resume", href: "#"},
-    { name: "Extras", href: "#"},
-    { name: "Contact", href: "#"},
+    { name: "Home", id: 1, href: "#"},
+    { name: "About", id: 2, href: "#"},
+    { name: "Projects", id: 3, href: "#"},
+    { name: "Resume", id: 4, href: "#"},
+    { name: "Extras", id: 5, href: "#"},
+    { name: "Contact", id: 6, href: "#"},
 ]
 
 export default Navlinks
