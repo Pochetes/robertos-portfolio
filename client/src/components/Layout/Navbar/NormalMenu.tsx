@@ -22,7 +22,7 @@ const NormalMenu = () => (
             </div>
             <nav className="hidden lg:flex lg:justify-between lg:text-shadow-main lg:space-x-10">
                 {Navlinks.map((item) => (
-                    <a key={item.id} href={item.href} className="p-2">
+                    <a key={item.id} href={item.href} className="p-2 gradient-link">
                     {item.name}
                     </a>
                 ))}

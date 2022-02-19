@@ -44,7 +44,7 @@ const HamburgerMenu = () => (
                         href={item.href}
                         className="flex flex-col items-center p-8 text-xl sm:text-2xl rounded-md"
                     >
-                        {item.name}
+                        <span className="p-2 gradient-link">{item.name}</span>
                     </a>
                     ))}
                 </div>
