@@ -6,6 +6,7 @@ import Experiences from "../components/Experiences/Experiences"
 import Extras from "../components/Extras"
 import ContactPage from "../components/ContactPage/ContactPage"
 import Layout from "../components/Layout/Layout"
+import "../styles/global.css"
 
 const App = () => (
     <Layout>

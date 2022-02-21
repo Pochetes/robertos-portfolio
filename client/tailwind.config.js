@@ -28,6 +28,13 @@ module.exports = {
         grey: '#8a94a4',
         airbnbRed: '#ff5a5f',
       },
+      backgroundColor: {
+        primary: 'var(--color-bg-primary)',
+      },
+      textColor: {
+        primary: 'var(--color-text-primary)',
+        secondary: 'var(--color-text-secondary)',
+      },
       spacing: {
         px: '1px',
         '0': '0',
