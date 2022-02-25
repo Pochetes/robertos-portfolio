@@ -1,5 +1,4 @@
 import * as React from "react"
-import Layout from "../Layout/Layout"
 import ColoredBorderImg from "../../atoms/coloredBorderImg"
 import { sol, cpu, suitSpade, airplane } from "../../../static/"
 

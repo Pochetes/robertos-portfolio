@@ -1,5 +1,4 @@
 import * as React from "react"
-import Layout from "../Layout/Layout"
 import Experience from "./Experience"
 
 const Experiences = () => (
