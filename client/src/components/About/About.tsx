@@ -15,7 +15,6 @@ const About = () => (
                     fromColor="from-blue-400" 
                     viaColor=""
                     toColor="to-emerald-400"
-                    mode="bg-black"
                     image={sol}
                     imageSize="scale-125"
                     />
@@ -26,7 +25,6 @@ const About = () => (
                     fromColor="from-rose-400"
                     viaColor="via-fuchsia-500"
                     toColor="to-indigo-500"
-                    mode="bg-black"
                     image={cpu}
                     imageSize="scale-75"
                     />
@@ -37,7 +35,6 @@ const About = () => (
                     fromColor="from-rose-400"
                     viaColor="via-fuchsia-500"
                     toColor="to-indigo-500"
-                    mode="bg-black"
                     image={suitSpade}
                     imageSize="scale-75"
                     />
@@ -48,7 +45,6 @@ const About = () => (
                     fromColor="from-blue-400" 
                     viaColor=""
                     toColor="to-emerald-400"
-                    mode="bg-black"
                     image={airplane}
                     imageSize="scale-100"
                     />

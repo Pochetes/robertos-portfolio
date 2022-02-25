@@ -21,14 +21,16 @@ const Layout = ({ children, className = "" }: LayoutProps) => {
             <React.Fragment>
                 <GlobalTheme />
                 <ThemeContext.Provider value={{ theme, toggleTheme }}>
-                    <div className="min-h-screen min-w-screen overflow-auto font-sans font-bold">
-                        <Navbar />
-                        <main className={className}>{children}</main>
-                        <CopyRight />
+                    <div className={theme === "dark" ? "dark" : ""}>
+                        <div className="min-h-screen min-w-screen overflow-auto font-sans font-bold">
+                            <Navbar />
+                            <main className={className}>{children}</main>
+                            <CopyRight />
+                        </div>
                     </div>
                 </ThemeContext.Provider>
             </React.Fragment>
         </ThemeProvider>
-        )
+    )
 }
 export default Layout
