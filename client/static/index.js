@@ -6,9 +6,15 @@ import algo from './crypto/algo.svg'
 import eth from './crypto/eth.svg'
 import sol from './crypto/sol.svg'
 import xlm from './crypto/xlm.svg'
-import cpu from "./interests/cpu.svg"
-import suitSpade from "./interests/suit-spade.svg"
-import airplane from "./interests/airplane.svg"
+import lightchip from './interests/chip/lightchip.png'
+import darkchip from './interests/chip/darkchip.png'
+import lightplane from './interests/plane/lightplane.png'
+import darkplane from './interests/plane/darkplane.png'
+import lightsol from './interests/sol/lightsol.png'
+import darksol from './interests/sol/darksol.png'
+import lightspades from './interests/spades/lightspades.png'
+import darkspades from './interests/spades/darkspades.png'
+import app from './interests/chip/app.png'
 
 export {
     github,
@@ -19,7 +25,13 @@ export {
     eth,
     sol,
     xlm,
-    cpu,
-    suitSpade,
-    airplane
+    lightchip,
+    darkchip,
+    lightplane,
+    darkplane,
+    lightsol,
+    darksol,
+    lightspades,
+    darkspades,
+    app
 }
