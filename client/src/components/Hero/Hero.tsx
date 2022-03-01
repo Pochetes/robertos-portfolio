@@ -1,12 +1,10 @@
-import React, { useContext } from "react"
+import * as React from "react"
 // @ts-ignore
 import Contacts from "./Contacts"
 import ColoredBorderImg from "../../atoms/coloredBorderImg"
 import { pfp } from "../../../static"
-import ThemeContext from "../../contexts/themeContext"
 
 const Hero = () => {
-    const { theme } = useContext(ThemeContext)
 
     return (
         <section>
