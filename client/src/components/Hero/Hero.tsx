@@ -20,7 +20,7 @@ const Hero = () => {
                     <ColoredBorderImg
                         width="w-64 sm:w-72 md:w-96"
                         height="h-64 sm:h-72 md:h-96"
-                        position=""
+                        position="gradient-x"
                         fromColor="from-rose-400"
                         viaColor="via-fuchsia-500"
                         toColor="to-indigo-500"
