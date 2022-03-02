@@ -1,21 +1,7 @@
-import React, { useContext } from "react"
-import ThemeContext from "../../contexts/themeContext"
-
-import {
-    lightchip,
-    darkchip,
-    lightplane,
-    darkplane,
-    lightsol,
-    darksol,
-    lightspades,
-    darkspades,
-    app
-} from '../../../static/index'
+import * as React from "react"
+import Interests from "./Interests"
 
 const About = () => {
-    const { theme } = useContext(ThemeContext)
-
     return (
         <section>
             <div className="max-w-screen min-h-screen lg:grid lg:grid-cols-2">
@@ -39,34 +25,12 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="lg:pt-24 lg:relative lg:overflow-hidden">
-                    <div className="lg:absolute lg:inset-x-0  lg:bg-pink-600 lg:rounded-tl-3xl">
-                        <div className="lg:bg-black lg:ml-1 lg:mt-1 lg:rounded-tl-3xl h-screen flex justify-center lg:items-center">
-                            <div className="grid grid-cols-2 w-3/4 place-items-center h-3/5 gap-4">
-                                <div className="p-3 rounded text-center">
-                                    <img className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48" src={theme === "dark" ? app : lightchip} alt="chip" />
-                                </div>
-                                <div className="p-3 rounded text-center">
-                                    <img className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48" src={theme === "dark" ? darkplane : lightplane} alt="plane" />
-                                </div>
-                                <div className="p-3 rounded text-center">
-                                    <img className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48" src={theme === "dark" ? darksol : lightsol} alt="sol" />
-                                </div>
-                                <div className="p-3 rounded text-center">
-                                    <img className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48" src={theme === "dark" ? darkspades : lightspades} alt="spades" />
-                                </div>
-                            </div>
-                        </div>
+                <div className="lg:relative">
+                    <div className="lg:absolute lg:rounded-l-3xl lg:my-10 lg:-inset-1 lg:bg-gradient-to-r lg:from-pink-600 lg:to-purple-600 lg:blur lg:gradient-xy lg:opacity-25 dark:lg:opacity-75 lg:transition lg:duration-200"></div>
+                    <div className="lg:relative lg:rounded-l-3xl lg:my-10 min-h-screen overflow-hidden bg-gray-100 dark:bg-black flex justify-center lg:items-center">
+                        <Interests />
                     </div>
                 </div>
-                {/* <div className="flex justify-center lg:pt-24 lg:bg-purple-400">
-                    <div className="grid grid-cols-2 grid-rows-2 gap-x-20 gap-y-4">
-                        <img className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48" src={theme === "dark" ? app : lightchip} alt="chip" />
-                        <img className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48" src={theme === "dark" ? darkplane : lightplane} alt="plane" />
-                        <img className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48" src={theme === "dark" ? darksol : lightsol} alt="sol" />
-                        <img className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48" src={theme === "dark" ? darkspades : lightspades} alt="spades" />
-                    </div>
-                </div> */}
             </div>
         </section>
     )
