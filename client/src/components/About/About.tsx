@@ -26,7 +26,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="lg:relative">
-                    <div className="lg:absolute lg:rounded-l-3xl lg:my-10 lg:-inset-1 lg:bg-gradient-to-r lg:from-pink-600 lg:to-purple-600 lg:blur lg:gradient-xy lg:opacity-25 dark:lg:opacity-75 lg:transition lg:duration-200"></div>
+                    <div className="lg:absolute lg:rounded-l-3xl lg:my-10 lg:-inset-1 lg:bg-gradient-to-br lg:from-green-300 lg:via-blue-500 lg:to-purple-600 lg:blur lg:gradient-xy lg:opacity-25 dark:lg:opacity-50 lg:transition lg:duration-200"></div>
                     <div className="lg:relative lg:rounded-l-3xl lg:my-10 min-h-screen overflow-hidden bg-gray-100 dark:bg-black flex justify-center lg:items-center">
                         <Interests />
                     </div>
