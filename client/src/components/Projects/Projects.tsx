@@ -3,15 +3,15 @@ import Project from "./Project"
 
 const Projects = () => (
     <section>
-        <h1 className="text-center">Projects</h1>
-        <div className="flex flex-row flex-auto">
+        <div className="min-h-screen flex flex-col items-center space-y-10">
+            <h1 className="text-4xl md:text-5xl text-shadow-main">Projects</h1>
             <Project
                 title="Navi Web Companion"
                 description="Some Google Chrome Extension"
                 image="../../../static"
                 link="https://github.com/Pochetes/repo1"
             />
-            <Project
+            {/* <Project
                 title="SmartClaims Blockchain Application"
                 description="Some Blockchain application for insurance claims"
                 image="../../../static"
@@ -28,7 +28,7 @@ const Projects = () => (
                 description="Some messaging application using socket programming principles"
                 image="../../../static"
                 link="https://github.com/Pochetes/repo4"
-            />
+            /> */}
         </div>
     </section>
 )
