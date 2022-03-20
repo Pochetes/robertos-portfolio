@@ -19,8 +19,7 @@ const Project = ({ title, description, image, link }) => (
 
                 {/* description */}
                 <p className="mt-2 text-md text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.
+                {description}
                 </p>
 
                 {/* tags */}
