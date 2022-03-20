@@ -18,9 +18,8 @@ const Carousel = () => {
     console.log(currentSlide)
 
     return (
-    <div className="min-h-screen flex flex-col items-center space-y-10">
-        <ChevronLeftIcon className="w-16 h-16" onClick={prevSlide}/>
-        <ChevronRightIcon className="w-16 h-16" onClick={nextSlide}/>
+    <div className="min-h-screen flex justify-center items-center">
+        <ChevronLeftIcon className="z-10 text-slate-800 dark:text-gray-100 -mr-7 xs:-mr-2 sm:mr-10 md:mr-14 shrink-0 w-16 h-16" onClick={prevSlide}/>
         {Slides.map((slide, index) => {
             return (
                 <div key={index}>
@@ -35,6 +34,7 @@ const Carousel = () => {
                 </div>
             )
         })}
+        <ChevronRightIcon className="text-slate-800 dark:text-gray-100 -ml-7 xs:-ml-2 sm:ml-10 md:ml-14 shrink-0 w-16 h-16" onClick={nextSlide}/>
     </div>
   )
 }

@@ -5,7 +5,7 @@ const Projects = () => {
 
     return (
         <section>
-            <h1 className="text-4xl text-center mb-7 md:text-5xl text-shadow-main">Projects</h1>
+            <h1 className="md:mt-10 text-5xl text-center md:text-7xl text-shadow-main">Projects</h1>
             <Carousel />
         </section>
     )

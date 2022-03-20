@@ -3,22 +3,22 @@ import Tag from './Tag'
 import Link from './Link'
 
 const Project = ({ title, description, image, link }) => (
-    <div className="h-full w-96 p-1 shadow-2xl bg-gradient-to-r from-blue-400 to-emerald-400 rounded-2xl">
-        <div className="block overflow-hidden bg-black rounded-xl shadow-sm">
+    <div className="h-full w-72 sm:w-80 md:w-128 shadow-xl dark:shadow-xl dark:shadow-neutral-800/50 rounded-2xl">
+        <div className="block p-3 bg-gray-50 dark:bg-neutral-900 rounded-xl">
             <img
-                className="object-cover w-full h-80"
+                className="object-cover w-full h-64 shadow-md rounded-lg"
                 src={image}
                 alt="project image"
             />
 
             <div className="p-6">
                 {/* project title */}
-                <h5 className="text-3xl font-bold">
+                <h5 className="text-xl sm:text-2xl md:text-3xl font-bold">
                 {title}
                 </h5>
 
                 {/* description */}
-                <p className="mt-2 text-md text-gray-500">
+                <p className="mt-2 text-sm md:text-md text-gray-500">
                 {description}
                 </p>
 
