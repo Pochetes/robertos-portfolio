@@ -20,12 +20,30 @@ module.exports = {
       '1/2': '50%',
     },
     extend: {
-      'animation': {
-        'gradient-x':'gradient-x 15s ease infinite',
-        'gradient-y':'gradient-y 15s ease infinite',
-        'gradient-xy':'gradient-xy 15s ease infinite',
+      animation: {
+        fadein: 'fadein ease-in 200ms 1',
+        fadeout: 'fadeout ease-out 200ms 1',
+        'gradient-x':'gradient-x 2s ease infinite',
+        'gradient-y':'gradient-y 2s ease infinite',
+        'gradient-xy':'gradient-xy 2s ease infinite',
       },
       'keyframes': {
+        fadein: {
+          '0%, 50%': {
+            transform: 'scale(0)'
+          },
+          '100%': {
+            transform: 'scaleY(1)'
+          }
+        },
+        fadeout: {
+          '0%, 50%': {
+            transform: 'scaleY(1)'
+          },
+          '100%': {
+            transform: 'scaleY(0)'
+          }
+        },
         'gradient-y': {
           '0%, 100%': {
             'background-size':'400% 400%',
