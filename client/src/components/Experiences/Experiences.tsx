@@ -1,45 +1,106 @@
 import * as React from "react"
 import Experience from "./Experience"
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
+import { GlobeIcon } from "@heroicons/react/outline";
+import 'react-vertical-timeline-component/style.min.css';
 
 const Experiences = () => (
     <section>
-        <h1>Skills & Experiences</h1>
-        <div className="flex flex-row flex-auto">
-            <div>
-                <img src="" alt="Skill 1" />
-                <img src="" alt="Skill 2" />
-                <img src="" alt="Skill 3" />
-                <img src="" alt="Skill 4" />
-                <img src="" alt="Skill 5" />
-                <img src="" alt="Skill 6" />
-                <img src="" alt="Skill 7" />
-                <img src="" alt="Skill 8" />
-                <img src="" alt="Skill 9" />
-                <img src="" alt="Skill 10" />
-            </div>
-            <div className="ml-10 basis-1/4">
-                <Experience
-                    year="2022"
-                    position="Software Engineer Intern"
-                    company="Meta Platforms"
-                />
-                <Experience
-                    year="2022"
-                    position="Software Engineer Intern"
-                    company="Meta Platforms"                    
-                />
-                <Experience
-                    year="2021"
-                    position="Software Engineer Intern"
-                    company="Twilio"
-                />
-                <Experience
-                    year="2020"
-                    position="Software Engineer Intern"
-                    company="Robinhood"
-                />
-            </div>
-        </div>
+        <h1 className="md:mt-10 text-5xl text-center md:text-7xl lg:mb-10 text-shadow-main">My Experiences</h1>
+        <VerticalTimeline>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: '#171717', color: '#f3f4f6', borderRadius: '20px' }}
+                contentArrowStyle={{ borderRight: '7px solid  #171717' }}
+                date="2011 - present"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={""}
+            >
+                <h3 className="text-semibold text-2xl">Meta Platforms Inc</h3>
+                <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: '#171717', color: '#f3f4f6', borderRadius: '20px' }}
+                contentArrowStyle={{ borderRight: '7px solid  #171717' }}
+                date="2011 - present"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={""}
+            >
+                <h3 className="text-semibold text-2xl">Meta Platforms Inc</h3>
+                <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: '#171717', color: '#f3f4f6', borderRadius: '20px' }}
+                contentArrowStyle={{ borderRight: '7px solid  #171717' }}
+                date="2011 - present"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={""}
+            >
+                <h3 className="text-semibold text-2xl">Meta Platforms Inc</h3>
+                <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: '#171717', color: '#f3f4f6', borderRadius: '20px' }}
+                contentArrowStyle={{ borderRight: '7px solid  #171717' }}
+                date="2011 - present"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={""}
+            >
+                <h3 className="text-semibold text-2xl">Meta Platforms Inc</h3>
+                <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: '#171717', color: '#f3f4f6', borderRadius: '20px' }}
+                contentArrowStyle={{ borderRight: '7px solid  #171717' }}
+                date="2011 - present"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={""}
+            >
+                <h3 className="text-semibold text-2xl">Meta Platforms Inc</h3>
+                <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: '#171717', color: '#f3f4f6', borderRadius: '20px' }}
+                contentArrowStyle={{ borderRight: '7px solid  #171717' }}
+                date="2011 - present"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={""}
+            >
+                <h3 className="text-semibold text-2xl">Meta Platforms Inc</h3>
+                <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: '#171717', color: '#f3f4f6', borderRadius: '20px' }}
+                contentArrowStyle={{ borderRight: '7px solid  #171717' }}
+                date="2011 - present"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={""}
+            >
+                <h3 className="text-semibold text-2xl">Meta Platforms Inc</h3>
+                <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: '#171717', color: '#f3f4f6', borderRadius: '20px' }}
+                contentArrowStyle={{ borderRight: '7px solid  #171717' }}
+                date="2011 - present"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={""}
+            >
+                <h3 className="text-semibold text-2xl">Meta Platforms Inc</h3>
+                <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+                icon={""}
+            />
+        </VerticalTimeline>
     </section>
 )
 
