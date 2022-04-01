@@ -4,7 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import ThemeContext from '../../contexts/themeContext';
 
 
-const Experience = ({ children, icon, iconColor, date }) => {
+const Experience = ({ children, icon, darkIconColor, lightIconColor, date }) => {
     const { theme } = useContext(ThemeContext);
     const darkColor = "#171717" // slate-800
     const lightColor = "#f3f4f6" // gray-100
@@ -15,7 +15,7 @@ const Experience = ({ children, icon, iconColor, date }) => {
             contentStyle={
                 theme === 'dark' ? 
                 { background: darkColor, color: lightColor, borderRadius: '20px' } 
-                : { background: lightColor, color: darkColor, borderRadius: '20px' }
+                : { background: "#f9fafb", color: darkColor, borderRadius: '20px' }
             }
             contentArrowStyle={
                 theme === 'dark' ?
@@ -23,7 +23,11 @@ const Experience = ({ children, icon, iconColor, date }) => {
                 : { borderRight: `7px solid ${lightColor}` }
             }
             date={date}
-            iconStyle={{ background: iconColor, color: '#fff' }}
+            iconStyle={
+                theme === 'dark' ?
+                { background: darkIconColor, color: '#fff' }
+                : { background: lightIconColor, color: '#fff' }
+            }
             icon={icon}
         >
             {children}
