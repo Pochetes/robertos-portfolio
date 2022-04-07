@@ -16,17 +16,17 @@ const Experiences = () => {
                 icon={<GlobeIcon />}
                 darkIconColor="#80ffdb"
                 lightIconColor="#ffba08"
-                date="2012 - present"
+                date="June 2022 - Present"
                 >
-                    <h3 className="text-semibold text-2xl">Liberty Mutual Insurance</h3>
-                    <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
+                    <h3 className="text-semibold text-2xl">Meta Platforms Inc.</h3>
+                    <h5 className="mt-1 text-gray-500">Facebook University Engineering Intern</h5>
                 </Experience>
                 {/* Second Experience */}
                 <Experience
                 icon={<GlobeIcon />}
                 darkIconColor="#64dfdf"
                 lightIconColor="#faa307"
-                date="2012 - present"
+                date="June 2021 - August 2021"
                 >
                     <h3 className="text-semibold text-2xl">Liberty Mutual Insurance</h3>
                     <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
@@ -34,17 +34,17 @@ const Experiences = () => {
                 {/* Third Experience */}
                 <Experience 
                 icon={<GlobeIcon />}
-                darkIconColor="#56cfe1"
+                darkIconColor="#48bfe3"
                 lightIconColor="#f48c06"
-                date="2012 - present"
+                date="June 2021 - July 2021"
                 >
-                    <h3 className="text-semibold text-2xl">Liberty Mutual Insurance</h3>
-                    <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
+                    <h3 className="text-semibold text-2xl">IBM</h3>
+                    <h5 className="mt-1 text-gray-500">Accelerate Software Track Participant</h5>
                 </Experience>
                 {/* Fourth Experience */}
                 <Experience 
                 icon={<GlobeIcon />}
-                darkIconColor="#4ea8de"
+                darkIconColor="#5390d9"
                 lightIconColor="#e85d04"
                 date="2012 - present"
                 >
@@ -54,28 +54,8 @@ const Experiences = () => {
                 {/* Fifth Experience */}
                 <Experience 
                 icon={<GlobeIcon />}
-                darkIconColor="#56cfe1"
+                darkIconColor="#5e60ce"
                 lightIconColor="#dc2f02"
-                date="2012 - present"
-                >
-                    <h3 className="text-semibold text-2xl">Liberty Mutual Insurance</h3>
-                    <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
-                </Experience>
-                {/* Sixth Experience */}
-                <Experience 
-                icon={<GlobeIcon />}
-                darkIconColor="#5390d9"
-                lightIconColor="#d00000"
-                date="2012 - present"
-                >
-                    <h3 className="text-semibold text-2xl">Liberty Mutual Insurance</h3>
-                    <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
-                </Experience>
-                {/* Seventh Experience */}
-                <Experience 
-                icon={<GlobeIcon />}
-                darkIconColor="#6930c3"
-                lightIconColor="#9d0208"
                 date="2012 - present"
                 >
                     <h3 className="text-semibold text-2xl">Liberty Mutual Insurance</h3>
@@ -85,7 +65,7 @@ const Experiences = () => {
                 <VerticalTimelineElement
                     iconStyle={
                         theme === 'dark' ?
-                        { background: '#7400b8', color: '#fff' }
+                        { background: '#6930c3', color: '#fff' }
                         : { background: '#370617', color: '#fff' } 
                     }
                     icon={""}
