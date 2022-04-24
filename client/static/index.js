@@ -9,6 +9,7 @@ import chip from './interests/chip.png'
 import plane from './interests/plane.png'
 import sol from './interests/sol.png'
 import spades from './interests/spades.png'
+import meta from './social/meta.png'
 
 export {
     github,
@@ -22,4 +23,5 @@ export {
     plane,
     sol,
     spades,
+    meta
 }
