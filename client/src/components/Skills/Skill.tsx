@@ -1,12 +1,11 @@
 import React from 'react'
 
-const Skill = ({ technology, img }) => {
+const Skill = ({ img }) => {
   return (
-    <div className="p-1 shadow-xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-2xl">
-      <a className="block p-6 bg-white dark:bg-slate-800 sm:p-8 rounded-xl" href="#">
-        <div className="mt-16 sm:pr-8">
-          <img src={img} alt="" />
-          <h5 className="text-xl font-bold text-gray-900 dark:text-gray-100">{technology}</h5>
+    <div className="shadow-xl rounded-2xl xs:mb-5 md:mb-0">
+      <a className="block bg-gray-50 dark:bg-neutral-900 rounded-xl" href="#">
+        <div className="mt-4 xs:p-4 sm:p-7 flex flex-col justify-center content-center">
+          <img className="lg:grayscale lg:hover:grayscale-0 lg:transition lg:ease-in-out lg:delay-150" src={img} alt="" />
         </div>
       </a>
     </div>
