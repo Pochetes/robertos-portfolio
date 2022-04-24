@@ -68,7 +68,7 @@ const Experiences = () => {
                         { background: '#6930c3', color: '#fff' }
                         : { background: '#370617', color: '#fff' } 
                     }
-                    icon={""}
+                    icon={<GlobeIcon />}
                     date="Inception.."
                 />
             </VerticalTimeline>

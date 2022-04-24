@@ -5,10 +5,9 @@ import {
     plane,
     sol,
     spades,
-} from '../../../static/index'
+} from '../../../static'
 
 const Interests = () => {
-  
     return (
         <div className="grid grid-cols-2 w-3/4 place-items-center h-3/5 gap-4">
             <div className="p-3 rounded text-center">
