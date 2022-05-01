@@ -1,11 +1,29 @@
 import * as React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { getImage } from "gatsby-plugin-image"
 // @ts-ignore
 import Contacts from "./Contacts"
 import ColoredBorderImg from "../../atoms/coloredBorderImg"
-import { pfp } from "../../../static"
 
 const Hero = () => {
-
+    // queries optimal image data and functionality for lazy-loading
+    const imageQuery = useStaticQuery(graphql`
+        query {
+            profileImg: file(relativePath: {eq: "pfp.jpeg"}) {
+                childImageSharp {
+                    gatsbyImageData(
+                        jpgOptions: {progressive: true}
+                        layout: CONSTRAINED
+                        width: 500
+                        placeholder: BLURRED
+                        height: 500
+                    )
+                }
+            }
+        }
+    `)
+    const image = getImage(imageQuery.profileImg.childImageSharp.gatsbyImageData)
+    
     return (
         <section>
             <div className="min-h-screen mt-8 md:mt-3 lg:flex lg:justify-evenly lg:pb-24">
@@ -24,7 +42,7 @@ const Hero = () => {
                         fromColor="from-rose-400"
                         viaColor="via-fuchsia-500"
                         toColor="to-indigo-500"
-                        image={pfp}
+                        image={image}
                         imageSize=""
                     />
                 </div>
@@ -32,4 +50,5 @@ const Hero = () => {
         </section>
     )
 }
+
 export default Hero
