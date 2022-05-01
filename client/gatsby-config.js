@@ -64,7 +64,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

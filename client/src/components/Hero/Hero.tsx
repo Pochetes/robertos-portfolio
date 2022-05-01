@@ -15,8 +15,8 @@ const Hero = () => {
                         jpgOptions: {progressive: true}
                         layout: CONSTRAINED
                         width: 500
-                        placeholder: BLURRED
                         height: 500
+                        placeholder: BLURRED
                     )
                 }
             }
