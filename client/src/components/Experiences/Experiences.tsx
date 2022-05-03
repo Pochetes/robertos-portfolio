@@ -9,7 +9,7 @@ const Experiences = () => {
 
     return (
         <section>
-            <h1 className="sm:mt-10 pb-20 text-5xl text-center md:text-7xl lg:mb-10 text-shadow-main">My Experiences</h1>
+            <h1 className="sm:mt-10 pb-20 text-5xl text-center md:text-7xl lg:mb-10 text-shadow-main">Experiences</h1>
             <VerticalTimeline lineColor={theme === 'dark' ? '#f3f4f6' : '#171717'}>
                 {/* First Experience */}
                 <Experience 

@@ -1,11 +1,10 @@
-import React from 'react'
+import * as React from 'react'
 import { Popover } from '@headlessui/react'
 import { MenuIcon } from '@heroicons/react/solid'
 import Navlinks from './Navlinks'
 import ThemeToggle from '../../../atoms/themeToggle'
 
 const NormalMenu = () => {
-
     return (
         <div className="relative px-4 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between" aria-label="Global">

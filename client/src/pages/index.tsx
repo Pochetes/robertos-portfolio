@@ -7,7 +7,6 @@ import Extras from "../components/Extras"
 import ContactPage from "../components/ContactPage/ContactPage"
 import Layout from "../components/Layout/Layout"
 import Skills from "../components/Skills/Skills"
-import "../styles/global.css"
 
 const App = () => (
     <Layout>
