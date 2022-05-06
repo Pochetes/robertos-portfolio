@@ -18,7 +18,7 @@ const Project = ({ title, description, image, link }) => (
                 </h5>
 
                 {/* description */}
-                <p className="mt-2 text-sm md:text-md text-gray-500">
+                <p className="mt-2 text-sm md:text-md text-gray-600">
                 {description}
                 </p>
 

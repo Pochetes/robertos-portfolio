@@ -19,7 +19,7 @@ const Experiences = () => {
                 date="June 2022 - Present"
                 >
                     <h3 className="text-semibold text-2xl">Meta Platforms Inc.</h3>
-                    <h5 className="mt-1 text-gray-500">Facebook University Engineering Intern</h5>
+                    <h5 className="mt-1 text-gray-600">Facebook University Engineering Intern</h5>
                 </Experience>
                 {/* Second Experience */}
                 <Experience
@@ -29,7 +29,7 @@ const Experiences = () => {
                 date="June 2021 - August 2021"
                 >
                     <h3 className="text-semibold text-2xl">Liberty Mutual Insurance</h3>
-                    <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
+                    <h5 className="mt-1 text-gray-600">Software Engineer Intern</h5>
                 </Experience>
                 {/* Third Experience */}
                 <Experience 
@@ -39,7 +39,7 @@ const Experiences = () => {
                 date="June 2021 - July 2021"
                 >
                     <h3 className="text-semibold text-2xl">IBM</h3>
-                    <h5 className="mt-1 text-gray-500">Accelerate Software Track Participant</h5>
+                    <h5 className="mt-1 text-gray-600">Accelerate Software Track Participant</h5>
                 </Experience>
                 {/* Fourth Experience */}
                 <Experience 
@@ -49,7 +49,7 @@ const Experiences = () => {
                 date="2012 - present"
                 >
                     <h3 className="text-semibold text-2xl">Liberty Mutual Insurance</h3>
-                    <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
+                    <h5 className="mt-1 text-gray-600">Software Engineer Intern</h5>
                 </Experience>
                 {/* Fifth Experience */}
                 <Experience 
@@ -59,7 +59,7 @@ const Experiences = () => {
                 date="2012 - present"
                 >
                     <h3 className="text-semibold text-2xl">Liberty Mutual Insurance</h3>
-                    <h5 className="mt-1 text-gray-500">Software Engineer Intern</h5>
+                    <h5 className="mt-1 text-gray-600">Software Engineer Intern</h5>
                 </Experience>
                 {/* Inception Element */}
                 <VerticalTimelineElement

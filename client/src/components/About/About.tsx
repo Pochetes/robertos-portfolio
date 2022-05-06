@@ -19,7 +19,7 @@ const About = () => {
                             </h2>
                         </div>
                         <div>
-                            <h3 className="text-md sm:text-xl md:text-2xl opacity-50">
+                            <h3 className="text-md sm:text-xl md:text-2xl text-gray-600">
                                     Currently building a crypto payments service on Solana. Outside of work, I love exercising, practicing jiu-jitsu and traveling. 
                             </h3>
                         </div>
