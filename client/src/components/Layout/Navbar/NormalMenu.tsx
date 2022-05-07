@@ -1,10 +1,20 @@
-import * as React from 'react'
+import React, { useContext } from 'react'
 import { Popover } from '@headlessui/react'
 import { MenuIcon } from '@heroicons/react/solid'
 import Navlinks from './Navlinks'
+import NavContext from '../../../contexts/NavContext'
 import ThemeToggle from '../../../atoms/themeToggle'
 
 const NormalMenu = () => {
+    const { navRefs } = useContext(NavContext)
+
+    const scrollToSection = (index) => {
+        window.scrollTo({
+            top: navRefs[index].current.offsetTop,
+            behavior: "smooth"
+        })
+    }
+
     return (
         <div className="relative px-4 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between" aria-label="Global">
@@ -23,9 +33,13 @@ const NormalMenu = () => {
                 </div>
                 <nav className="hidden lg:flex lg:justify-between lg:text-shadow-main lg:space-x-10">
                     {Navlinks.map((item) => (
-                        <a key={item.id} href={item.href} className="p-2 gradient-link">
+                        <div
+                        key={item.id}
+                        onClick={() => scrollToSection(item.id)}
+                        className="p-2 gradient-link"
+                        >
                         {item.name}
-                        </a>
+                        </div>
                     ))}
                 </nav>
                 <div className="pt-2">

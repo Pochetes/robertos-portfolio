@@ -1,15 +1,18 @@
 import React, { useContext } from "react"
 import Experience from "./Experience"
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
-import ThemeContext from "../../contexts/themeContext";
+import ThemeContext from "../../contexts/ThemeContext";
+import NavContext from "../../contexts/NavContext";
 import { GlobeIcon } from "@heroicons/react/outline";
 
 const Experiences = () => {
     const { theme } = useContext(ThemeContext);
+    const { navRefs } = useContext(NavContext)
+    const experiencesRef = navRefs[3]
 
     return (
         <section>
-            <h1 className="sm:mt-10 pb-20 text-5xl text-center md:text-7xl lg:mb-10 text-shadow-main">Experiences</h1>
+            <h1 ref={experiencesRef} className="sm:mt-10 pb-20 text-5xl text-center md:text-7xl lg:mb-10 text-shadow-main">Experiences</h1>
             <VerticalTimeline lineColor={theme === 'dark' ? '#f3f4f6' : '#171717'}>
                 {/* First Experience */}
                 <Experience 

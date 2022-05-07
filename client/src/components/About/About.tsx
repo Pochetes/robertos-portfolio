@@ -1,9 +1,13 @@
-import * as React from "react"
+import React, { useContext } from "react"
+import NavContext from "../../contexts/NavContext"
 import Interests from "./Interests"
 
 const About = () => {
+    const { navRefs } = useContext(NavContext)
+    const aboutRef = navRefs[1]
+
     return (
-        <section>
+        <section ref={aboutRef}>
             <div className="max-w-screen min-h-screen lg:grid lg:grid-cols-2">
                 <div className="lg:flex lg:items-center space-y-10 p-9">
                     <div className="lg:hidden">
@@ -35,4 +39,6 @@ const About = () => {
         </section>
     )
 }
-export default About
+
+const forwardedAbout = React.forwardRef(About)
+export default forwardedAbout
