@@ -7,7 +7,9 @@ const Footer = () => {
 
     const scrollToSection = (index) => {
         window.scrollTo({
-            top: navRefs[index].current.offsetTop,
+            top: index > 0 
+                ? navRefs[index].current.offsetTop
+                : 0,
             behavior: "smooth"
         })
     }
