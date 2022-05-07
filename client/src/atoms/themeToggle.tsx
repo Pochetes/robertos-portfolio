@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { SunIcon, MoonIcon } from '@heroicons/react/solid'
-import ThemeContext from '../contexts/themeContext'
+import ThemeContext from '../contexts/ThemeContext'
 
 const ThemeToggle = () => {
     const { theme, toggleTheme } = useContext(ThemeContext)
