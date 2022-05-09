@@ -14,6 +14,7 @@ const Layout = ({ children, className = "" }: LayoutProps) => {
 
     return (
         <React.Fragment>
+            {/* @ts-ignore */}
             <ThemeContext.Provider value={{ theme, toggleTheme }}>
                 <div className={theme === "dark" ? "dark" : ""}>
                     <div className="min-h-screen min-w-screen overflow-auto font-sans font-bold bg-gray-100 text-slate-800 dark:bg-black dark:text-gray-100 transition-colors duration-300">

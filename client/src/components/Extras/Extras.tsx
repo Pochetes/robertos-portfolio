@@ -5,7 +5,7 @@ import Albums from "./Albums"
 import NavContext from "../../contexts/NavContext"
 
 const Extras = () => {
-    const { navRefs } = useContext(NavContext)
+    const navRefs = useContext(NavContext)
     const extrasRef = navRefs[5]
 
     return (

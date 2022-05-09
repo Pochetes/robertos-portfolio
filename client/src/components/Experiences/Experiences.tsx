@@ -7,7 +7,7 @@ import { GlobeIcon } from "@heroicons/react/outline";
 
 const Experiences = () => {
     const { theme } = useContext(ThemeContext);
-    const { navRefs } = useContext(NavContext)
+    const navRefs = useContext(NavContext)
     const experiencesRef = navRefs[3]
 
     return (

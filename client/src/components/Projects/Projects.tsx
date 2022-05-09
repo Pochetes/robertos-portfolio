@@ -3,7 +3,7 @@ import Carousel from "./Carousel"
 import NavContext from "../../contexts/NavContext"
 
 const Projects = () => {
-    const { navRefs } = useContext(NavContext)
+    const navRefs = useContext(NavContext)
     const projectsRef = navRefs[2]
 
     return (

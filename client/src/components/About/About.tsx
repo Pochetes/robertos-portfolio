@@ -3,7 +3,7 @@ import NavContext from "../../contexts/NavContext"
 import Interests from "./Interests"
 
 const About = () => {
-    const { navRefs } = useContext(NavContext)
+    const navRefs = useContext(NavContext)
     const aboutRef = navRefs[1]
 
     return (

@@ -7,7 +7,7 @@ import ColoredBorderImg from "../../atoms/coloredBorderImg"
 import NavContext from "../../contexts/NavContext"
 
 const Hero = () => {
-    const { navRefs } = useContext(NavContext)
+    const navRefs = useContext(NavContext)
     const homeRef = navRefs[0]
 
     // queries optimal image data and functionality for lazy-loading

@@ -5,7 +5,7 @@ import Skill from './Skill'
 import NavContext from '../../contexts/NavContext'
 
 const Skills = () => {
-    const { navRefs } = useContext(NavContext)
+    const navRefs = useContext(NavContext)
     const skillsRef = navRefs[4]
     // queries optimal image data and functionality for lazy-loading
     const imageQuery = useStaticQuery(graphql`

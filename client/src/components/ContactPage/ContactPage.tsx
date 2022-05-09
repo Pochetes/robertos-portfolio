@@ -4,7 +4,7 @@ import Contact from "./Contact"
 import NavContext from "../../contexts/NavContext"
 
 const ContactPage = () => {
-    const { navRefs } = useContext(NavContext)
+    const navRefs = useContext(NavContext)
     const contactRef = navRefs[6]
     
 

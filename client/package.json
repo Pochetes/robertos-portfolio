@@ -13,8 +13,7 @@
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "preload-fonts": "gatsby-preload-fonts"
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
