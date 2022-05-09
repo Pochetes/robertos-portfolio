@@ -3,7 +3,7 @@ import Navlinks from "./Navbar/Navlinks"
 import NavContext from "../../contexts/NavContext"
 
 const Footer = () => {
-    const { navRefs } = useContext(NavContext)
+    const navRefs = useContext(NavContext)
 
     const scrollToSection = (index) => {
         window.scrollTo({

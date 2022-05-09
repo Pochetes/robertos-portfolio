@@ -1,5 +1,10 @@
 import { createContext } from 'react';
 
-const themeContext = createContext(null)
+const defaultContext = {
+    theme: '',
+    toggleTheme: ''
+}
+
+const themeContext = createContext(defaultContext)
 
 export default themeContext

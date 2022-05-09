@@ -6,7 +6,7 @@ import NavContext from '../../../contexts/NavContext'
 import ThemeToggle from '../../../atoms/themeToggle'
 
 const NormalMenu = () => {
-    const { navRefs } = useContext(NavContext)
+    const navRefs = useContext(NavContext)
 
     const scrollToSection = (index) => {
         window.scrollTo({

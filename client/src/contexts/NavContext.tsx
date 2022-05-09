@@ -1,5 +1,9 @@
 import { createContext } from "react"
 
-const NavContext = createContext(null)
+const defaultContext = {
+    nav: ''
+}
+
+const NavContext = createContext(defaultContext)
 
 export default NavContext
