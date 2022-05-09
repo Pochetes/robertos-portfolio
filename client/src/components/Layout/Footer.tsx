@@ -21,7 +21,7 @@ const Footer = () => {
                     <div 
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
-                    className="p-2 xs:w-28 lg:gradient-link"
+                    className="p-2 cursor-pointer xs:w-28 lg:gradient-link"
                     >
                     {item.name}
                     </div>

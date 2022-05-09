@@ -38,7 +38,7 @@ const NormalMenu = () => {
                         <div
                         key={item.id}
                         onClick={() => scrollToSection(item.id)}
-                        className="p-2 gradient-link"
+                        className="p-2 gradient-link cursor-pointer"
                         >
                         {item.name}
                         </div>

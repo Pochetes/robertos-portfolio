@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css';
-import ThemeContext from '../../contexts/ThemeContext';
+import ThemeContext from '../../contexts/themeContext';
 
 const Experience = ({ children, icon, darkIconColor, lightIconColor, date }) => {
     const { theme } = useContext(ThemeContext);

@@ -1,7 +1,7 @@
 import * as React from "react"
 import Navbar from "./Navbar/Navbar"
 import Footer from "./Footer"
-import ThemeContext from "../../contexts/ThemeContext"
+import ThemeContext from "../../contexts/themeContext"
 import useDarkMode from "../../hooks/useDarkMode"
 
 type LayoutProps = {

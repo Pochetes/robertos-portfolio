@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import Experience from "./Experience"
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
-import ThemeContext from "../../contexts/ThemeContext";
+import ThemeContext from "../../contexts/themeContext";
 import NavContext from "../../contexts/NavContext";
 import { GlobeIcon } from "@heroicons/react/outline";
 
