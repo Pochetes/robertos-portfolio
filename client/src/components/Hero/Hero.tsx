@@ -36,14 +36,10 @@ const Hero = () => {
                 </div>
                 <div className="lg:flex items-center">
                     <ColoredBorderImg
-                        width="w-64 sm:w-72 md:w-96"
-                        height="h-64 sm:h-72 md:h-96"
-                        position="gradient-x"
+                        image={image}
                         fromColor="from-rose-400"
                         viaColor="via-fuchsia-500"
                         toColor="to-indigo-500"
-                        image={image}
-                        imageSize=""
                     />
                 </div>
             </div>
