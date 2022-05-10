@@ -2,6 +2,7 @@ import React, { Fragment, useContext } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/solid'
 import Navlinks from './Navlinks'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 import ThemeToggle from '../../../atoms/themeToggle'
 import ThemeContext from '../../../contexts/themeContext'
 
@@ -44,8 +45,8 @@ const HamburgerMenu = () => {
                     <div className="px-2 pt-2 pb-3 space-y-1">
                         {Navlinks.map((item) => (
                         <a
-                            key={item.name}
-                            href={item.href}
+                            key={item.id}
+                            onClick={() => scrollTo(`#${item.name.toLowerCase()}-header`)}
                             className="flex flex-col items-center p-7 text-xl sm:text-2xl rounded-md"
                         >
                             <span className="p-2 gradient-link">{item.name}</span>
