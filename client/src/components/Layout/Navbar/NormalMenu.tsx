@@ -1,21 +1,11 @@
-import React, { useContext } from 'react'
+import * as React from 'react'
 import { Popover } from '@headlessui/react'
 import { MenuIcon } from '@heroicons/react/solid'
 import Navlinks from './Navlinks'
-import NavContext from '../../../contexts/NavContext'
 import ThemeToggle from '../../../atoms/themeToggle'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const NormalMenu = () => {
-    const navRefs = useContext(NavContext)
-
-    const scrollToSection = (index) => {
-        window.scrollTo({
-            top: index > 0 
-                ? navRefs[index].current.offsetTop
-                : 0,
-            behavior: "smooth"
-        })
-    }
 
     return (
         <div className="relative px-4 sm:px-6 lg:px-8">
@@ -37,7 +27,7 @@ const NormalMenu = () => {
                     {Navlinks.map((item) => (
                         <div
                         key={item.id}
-                        onClick={() => scrollToSection(item.id)}
+                        onClick={() => scrollTo(`#${item.name.toLowerCase()}-header`)}
                         className="p-2 gradient-link cursor-pointer"
                         >
                         {item.name}

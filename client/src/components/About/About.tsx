@@ -1,13 +1,10 @@
-import React, { useContext } from "react"
-import NavContext from "../../contexts/NavContext"
+import * as React from "react"
 import Interests from "./Interests"
 
 const About = () => {
-    const navRefs = useContext(NavContext)
-    const aboutRef = navRefs[1]
 
     return (
-        <section ref={aboutRef}>
+        <section id="about-header">
             <div className="max-w-screen min-h-screen lg:grid lg:grid-cols-2">
                 <div className="lg:flex lg:items-center space-y-10 p-9">
                     <div className="lg:hidden">

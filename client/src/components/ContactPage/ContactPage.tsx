@@ -1,13 +1,8 @@
-import React, { useContext }from "react"
+import * as React from "react"
 import { graphql, useStaticQuery } from 'gatsby'
 import Contact from "./Contact"
-import NavContext from "../../contexts/NavContext"
 
 const ContactPage = () => {
-    const navRefs = useContext(NavContext)
-    const contactRef = navRefs[6]
-    
-
     // queries svg and functionality for lazy-loading
     const imageQuery = useStaticQuery(graphql`
         query {
@@ -32,8 +27,8 @@ const ContactPage = () => {
     const emailImg = imageQuery.emailImg
 
     return (
-        <section className="xs:space-y-8 md:space-y-16">
-            <h1 ref={contactRef} className="mt-32 text-5xl text-center md:text-7xl lg:mb-10 text-shadow-main" >Let's Talk!</h1>
+        <section id="contact-header" className="xs:space-y-8 md:space-y-16">
+            <h1 className="mt-32 text-5xl text-center md:text-7xl lg:mb-10 text-shadow-main" >Let's Talk!</h1>
             <div className="flex flex-col xs:space-y-8 sm:space-y-10 lg:space-y-16 xs:mx-8 sm:mx-32 lg:mx-96">
                 <Contact 
                     image={githubImg.publicURL}

@@ -1,15 +1,11 @@
-import React, { useContext } from "react"
+import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 // @ts-ignore
 import Contacts from "./Contacts"
 import ColoredBorderImg from "../../atoms/coloredBorderImg"
-import NavContext from "../../contexts/NavContext"
 
 const Hero = () => {
-    const navRefs = useContext(NavContext)
-    const homeRef = navRefs[0]
-
     // queries optimal image data and functionality for lazy-loading
     const imageQuery = useStaticQuery(graphql`
         query {
@@ -29,7 +25,7 @@ const Hero = () => {
     const image = getImage(imageQuery.profileImg.childImageSharp.gatsbyImageData)
     
     return (
-        <section ref={homeRef}>
+        <section>
             <div className="min-h-screen mt-8 md:mt-3 lg:flex lg:justify-evenly lg:pb-24">
                 <div className="flex flex-col justify-center lg:items-start text-center p-3 md:p-5">
                     <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-6xl font-extrabold">

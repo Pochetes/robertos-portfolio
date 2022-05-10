@@ -6,7 +6,7 @@ import HamburgerMenu from './HamburgerMenu';
 
 const Navbar = () => {
     return (
-        <header className="py-6 px-6">
+        <header id="home-header" className="py-6 px-6">
             <Popover>
                     <NormalMenu />
                     <HamburgerMenu />

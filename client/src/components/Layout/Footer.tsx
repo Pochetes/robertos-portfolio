@@ -1,18 +1,8 @@
-import React, { useContext } from "react"
+import * as React from "react"
+import scrollTo from "gatsby-plugin-smoothscroll"
 import Navlinks from "./Navbar/Navlinks"
-import NavContext from "../../contexts/NavContext"
 
 const Footer = () => {
-    const navRefs = useContext(NavContext)
-
-    const scrollToSection = (index) => {
-        window.scrollTo({
-            top: index > 0 
-                ? navRefs[index].current.offsetTop
-                : 0,
-            behavior: "smooth"
-        })
-    }
 
     return (
         <footer className="bg-gray-200 dark:bg-neutral-900 mt-48 h-fit flex flex-col md:mt-64">
@@ -20,7 +10,7 @@ const Footer = () => {
                 {Navlinks.map((item) => (
                     <div 
                     key={item.id}
-                    onClick={() => scrollToSection(item.id)}
+                    onClick={() => scrollTo(`#${item.name.toLowerCase()}-header`)}
                     className="p-2 cursor-pointer xs:w-28 lg:gradient-link"
                     >
                     {item.name}
