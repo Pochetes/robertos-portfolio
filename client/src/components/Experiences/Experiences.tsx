@@ -18,8 +18,8 @@ const Experiences = () => {
                 lightIconColor="#ffba08"
                 date="June 2022 - Present"
                 >
-                    <h3 className="text-semibold text-2xl">Meta Platforms Inc.</h3>
-                    <h5 className="mt-1 text-gray-600">Facebook University Engineering Intern</h5>
+                    <h3 className="text-semibold text-2xl">FBU University Engineering Intern</h3>
+                    <h5 className="mt-1 text-gray-600">Meta Platforms Inc.</h5>
                 </Experience>
                 {/* Second Experience */}
                 <Experience
@@ -28,8 +28,8 @@ const Experiences = () => {
                 lightIconColor="#faa307"
                 date="June 2021 - August 2021"
                 >
-                    <h3 className="text-semibold text-2xl">Liberty Mutual Insurance</h3>
-                    <h5 className="mt-1 text-gray-600">Software Engineer Intern</h5>
+                    <h3 className="text-semibold text-2xl">Software Engineer Intern</h3>
+                    <h5 className="mt-1 text-gray-600">Liberty Mutual Insurance</h5>
                 </Experience>
                 {/* Third Experience */}
                 <Experience 
@@ -38,28 +38,8 @@ const Experiences = () => {
                 lightIconColor="#f48c06"
                 date="June 2021 - July 2021"
                 >
-                    <h3 className="text-semibold text-2xl">IBM</h3>
-                    <h5 className="mt-1 text-gray-600">Accelerate Software Track Participant</h5>
-                </Experience>
-                {/* Fourth Experience */}
-                <Experience 
-                icon={<GlobeIcon />}
-                darkIconColor="#5390d9"
-                lightIconColor="#e85d04"
-                date="2012 - present"
-                >
-                    <h3 className="text-semibold text-2xl">Liberty Mutual Insurance</h3>
-                    <h5 className="mt-1 text-gray-600">Software Engineer Intern</h5>
-                </Experience>
-                {/* Fifth Experience */}
-                <Experience 
-                icon={<GlobeIcon />}
-                darkIconColor="#5e60ce"
-                lightIconColor="#dc2f02"
-                date="2012 - present"
-                >
-                    <h3 className="text-semibold text-2xl">Liberty Mutual Insurance</h3>
-                    <h5 className="mt-1 text-gray-600">Software Engineer Intern</h5>
+                    <h3 className="text-semibold text-2xl">Accelerate Software Track Participant</h3>
+                    <h5 className="mt-1 text-gray-600">IBM</h5>
                 </Experience>
                 {/* Inception Element */}
                 <VerticalTimelineElement
