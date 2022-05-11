@@ -26,12 +26,12 @@ const Hero = () => {
     
     return (
         <section>
-            <div className="min-h-screen mt-8 md:mt-3 lg:flex lg:justify-evenly lg:pb-24">
+            <div className="xs:mt-5 lg:mt-3 lg:flex lg:justify-evenly lg:pb-24 xs:min-h-screen lg:min-h-0">
                 <div className="flex flex-col justify-center lg:items-start text-center p-3 md:p-5">
                     <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-6xl font-extrabold">
                         Hi! 👋 I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400"> Roberto</span>.
                     </h1>
-                    <h1 className="md:text-lg lg:text-left text-gray-600 font-semibold opacity-80 text-shadow-alt">engineer • thinker • explorer</h1>
+                    <h1 className="text-gray-600 font-semibold opacity-80 text-shadow-alt xs:text-md s2:text-lg sm:text-xl lg:text-left">engineer • thinker • explorer</h1>
                     <Contacts />
                 </div>
                 <div className="lg:flex items-center">

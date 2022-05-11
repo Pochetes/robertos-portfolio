@@ -25,13 +25,13 @@ const Contact = () => {
         <div className="flex space-x-10 justify-center lg:justify-left mt-2">
 
             <a href="https://www.github.com/Pochetes" target="_blank">
-                <img className="scale-110 sm:scale-125 md:scale-150" src={githubImg.publicURL} alt="github image" />
+                <img className="xs:w-9 xs:h-9 sm:w-10 sm:h-10" src={githubImg.publicURL} alt="github image" />
             </a>
             <a href="https://www.linkedin.com/in/RobertoMartinez21" target="_blank">
-                <img className="scale-110 sm:scale-125 md:scale-150" src={linkedinImg.publicURL} alt="linkedin image" />
+                <img className="xs:w-9 xs:h-9 sm:w-10 sm:h-10" src={linkedinImg.publicURL} alt="linkedin image" />
             </a>
             <a href="https://www.twitter.com/iamrobmart" target="_blank">
-                <img className="scale-110 sm:scale-125 md:scale-150" src={twitterImg.publicURL} alt="twitter image" />
+                <img className="xs:w-9 xs:h-9 sm:w-10 sm:h-10" src={twitterImg.publicURL} alt="twitter image" />
                 </a>
         </div>
     )

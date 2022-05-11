@@ -60,18 +60,18 @@ const Interests = () => {
     const spadesImg = getImage(imageQuery.spadesImg.childImageSharp.gatsbyImageData)    
 
     return (
-        <div className="grid grid-cols-2 w-3/4 place-items-center h-3/5 gap-4">
+        <div className="grid grid-cols-2 sm:place-items-center xs:gap-2 xs:my-16 sm:gap-8 sm:mx-16 lg:mx-16">
             <div className="p-3 rounded text-center">
-                <GatsbyImage className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48" image={chipImg} alt="chip" />
+                <GatsbyImage imgClassName="" image={chipImg} alt="chip" />
             </div>
             <div className="p-3 rounded text-center">
-                <GatsbyImage className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48" image={planeImg} alt="plane" />
+                <GatsbyImage imgClassName="xs:w-16 xs:h-16 sm:w-40 sm:h-40 md:w-48 md:h-48" image={planeImg} alt="plane" />
             </div>
             <div className="p-3 rounded text-center">
-                <GatsbyImage className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48" image={solImg} alt="sol" />
+                <GatsbyImage imgClassName="xs:w-16 xs:h-16 sm:w-40 sm:h-40 md:w-48 md:h-48" image={solImg} alt="sol" />
             </div>
             <div className="p-3 rounded text-center">
-                <GatsbyImage className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48" image={spadesImg} alt="spades" />
+                <GatsbyImage imgClassName="xs:w-16 xs:h-16 sm:w-40 sm:h-40 md:w-48 md:h-48" image={spadesImg} alt="spades" />
             </div>
         </div>
     )
