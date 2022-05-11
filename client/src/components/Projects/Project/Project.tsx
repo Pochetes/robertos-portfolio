@@ -1,13 +1,14 @@
 import React from 'react';
 import Tag from './Tag'
 import Link from './Link'
+import { GatsbyImage } from 'gatsby-plugin-image';
 
-const Project = ({ title, description, image, link }) => (
+const Project = ({ title, description, image, techUsed, link }) => (
     <div className="h-full w-72 sm:w-80 md:w-128 shadow-xl dark:shadow-xl dark:shadow-neutral-800/50 rounded-2xl">
         <div className="block p-3 bg-gray-50 dark:bg-neutral-900 rounded-xl">
-            <img
+            <GatsbyImage
                 className="object-cover w-full h-64 shadow-md rounded-lg"
-                src={image}
+                image={image}
                 alt="project image"
             />
 
@@ -23,10 +24,11 @@ const Project = ({ title, description, image, link }) => (
                 </p>
 
                 {/* tags */}
-                <ul className="mt-5 flex space-x-2">
-                    <Tag text="Python"/>
-                    <Tag text="Javascript"/>
-                </ul>
+                <div className="mt-5 flex space-x-2">
+                    {techUsed.map((tech, index) => {
+                        return <Tag key={index} text={tech}/>
+                    })}
+                </div>
                 
                 {/* Link to project */}
                 <a href={link}>
@@ -36,5 +38,6 @@ const Project = ({ title, description, image, link }) => (
         </div>
     </div>
 )
+
 
 export default Project
