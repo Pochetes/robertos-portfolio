@@ -60,7 +60,7 @@ const Interests = () => {
     const spadesImg = getImage(imageQuery.spadesImg.childImageSharp.gatsbyImageData)    
 
     return (
-        <div className="grid grid-cols-2 sm:place-items-center xs:gap-2 xs:my-16 sm:gap-8 sm:mx-16 lg:mx-16">
+        <div className="grid grid-cols-2 sm:place-items-center xs:gap-2 sm:gap-8 sm:mx-16 lg:mx-16">
             <div className="p-3 rounded text-center">
                 <GatsbyImage imgClassName="" image={chipImg} alt="chip" />
             </div>
