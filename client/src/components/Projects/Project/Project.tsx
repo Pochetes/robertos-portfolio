@@ -24,7 +24,7 @@ const Project = ({ title, description, image, techUsed, link }) => (
                 </p>
 
                 {/* tags */}
-                <div className="mt-5 flex space-x-2">
+                <div className="mt-5 flex flex-wrap">
                     {techUsed.map((tech, index) => {
                         return <Tag key={index} text={tech}/>
                     })}
