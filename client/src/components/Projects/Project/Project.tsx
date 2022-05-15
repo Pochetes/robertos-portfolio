@@ -4,15 +4,15 @@ import Link from './Link'
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 const Project = ({ title, description, image, techUsed, link }) => (
-    <div className="h-full w-72 sm:w-80 md:w-128 shadow-xl dark:shadow-xl dark:shadow-neutral-800/50 rounded-2xl">
-        <div className="block p-3 bg-gray-50 dark:bg-neutral-900 rounded-xl">
+    <div className="xs:w-64 s1:w-72 s2:w-80 sm:w-80 md:w-128 shadow-xl dark:shadow-xl dark:shadow-neutral-800/50 rounded-2xl">
+        <div className="block bg-gray-50 dark:bg-neutral-900 rounded-xl">
             <GatsbyImage
-                className="object-cover w-full h-64 shadow-md rounded-lg"
+                className="object-cover h-64 rounded-t-lg"
                 image={image}
                 alt="project image"
             />
 
-            <div className="p-6">
+            <div className="p-4">
                 {/* project title */}
                 <h5 className="text-xl sm:text-2xl md:text-3xl font-bold">
                 {title}

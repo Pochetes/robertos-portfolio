@@ -4,7 +4,7 @@ import Carousel from "./Carousel"
 
 const Projects = () => {
     return (
-        <section id="projects-header">
+        <section id="projects-header" className="xs:mb-20">
             <h1 className="md:mt-10 text-5xl text-center md:text-7xl text-shadow-main">Projects</h1>
             <Carousel />
         </section>
