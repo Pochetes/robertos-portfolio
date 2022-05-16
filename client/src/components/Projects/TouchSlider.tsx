@@ -1,17 +1,10 @@
-import * as React from 'react'
+import React from 'react'
 import Slides from './Slides'
 import Project from "./Project/Project"
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image'
-import { useMediaQuery } from 'react-responsive'
 
-import "swiper/css"
-import "../../styles/swiper.css"
-import "swiper/css/navigation"
-import { Navigation } from 'swiper'
-
-const Carousel = () => {
+const TouchSlider = () => {
     // queries optimal image data and functionality for lazy-loading
     const imageQuery = useStaticQuery(graphql`
         query {
@@ -69,33 +62,23 @@ const Carousel = () => {
 
     const projectImgs = [naviImg, smartClaimsImg, portfolioApiImg, realTalkAppImg]
 
-    const isMobile = useMediaQuery({ query: `(max-width: 900px)` });
-
     return (
-        <div className="mt-20 mx-40">
-            <Swiper
-                spaceBetween={50}
-                slidesPerView={isMobile ? 1 : 2}
-                centeredSlides={true}
-                modules={[Navigation]}
-                navigation
-            >
-                {Slides.map((slide, index) => {
-                    return (
-                        <SwiperSlide key={index} className="bg-neutral-900 rounded-2xl">
-                            <Project
-                                title={slide.title}
-                                description={slide.description}
-                                image={projectImgs[index]}
-                                techUsed={slide.techUsed}
-                                link={slide.link}
-                            />
-                        </SwiperSlide>
-                    )
-                })}
-            </Swiper>
+        <div className="flex overflow-x-auto mt-10 p-4 xs:ml-3 s1:ml-6 s2:ml-7 xs:space-x-6 s1:space-x-7 s2:space-x-8">
+            {Slides.map((slide, index) => {
+                return (
+                    <div key={index}>
+                        <Project
+                            title={slide.title}
+                            description={slide.description}
+                            image={projectImgs[index]}
+                            techUsed={slide.techUsed}
+                            link={slide.link}
+                        />
+                    </div>
+                )
+            })}
         </div>
     )
 }
 
-export default Carousel
+export default TouchSlider

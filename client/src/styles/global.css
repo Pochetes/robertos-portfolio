@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper-slide .swiper-slide-active  {
+  background-color: red;
+}
+
 @layer utilities {
+
   .text-shadow-main {
     text-shadow: 0 2px 4px rgba(255,255,255,0.30);
   }
