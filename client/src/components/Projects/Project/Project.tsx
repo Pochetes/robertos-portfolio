@@ -8,7 +8,7 @@ const Project = ({ title, description, image, techUsed, link }) => {
     const isMobile = useMediaQuery({ query: `(max-width: 640px)` });
 
     return (
-        <div className={isMobile ? "xs:w-64 s1:w-72 s2:w-80 sm:w-80 bg-neutral-900 rounded-xl" : ""}>
+        <div className={`${isMobile ? "xs:w-64 s1:w-72 s2:w-80 sm:w-80" : ""} bg-white dark:bg-neutral-900 shadow-lg dark:shadow-neutral-800/50 rounded-xl`}>
             <GatsbyImage className="object-cover w-full h-80 rounded-t-lg" image={image} alt="" />
             <div className="p-4">
                 {/* project title */}

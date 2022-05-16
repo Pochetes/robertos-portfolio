@@ -82,7 +82,7 @@ const Carousel = () => {
             >
                 {Slides.map((slide, index) => {
                     return (
-                        <SwiperSlide key={index} className="bg-neutral-900 rounded-2xl">
+                        <SwiperSlide key={index}>
                             <Project
                                 title={slide.title}
                                 description={slide.description}
