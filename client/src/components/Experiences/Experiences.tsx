@@ -26,12 +26,22 @@ const Experiences = () => {
                 icon={<GlobeIcon />}
                 darkIconColor="#64dfdf"
                 lightIconColor="#faa307"
+                date="January 2022 - April 2022"
+                >
+                    <h3 className="text-semibold text-2xl">Undergraduate Research Assistant</h3>
+                    <h5 className="mt-1 text-gray-600">DaMRL: Data Management Research Lab</h5>
+                </Experience>
+                {/* Third Experience */}
+                <Experience
+                icon={<GlobeIcon />}
+                darkIconColor="#64dfdf"
+                lightIconColor="#faa307"
                 date="June 2021 - August 2021"
                 >
                     <h3 className="text-semibold text-2xl">Software Engineer Intern</h3>
                     <h5 className="mt-1 text-gray-600">Liberty Mutual Insurance</h5>
                 </Experience>
-                {/* Third Experience */}
+                {/* Fourth Experience */}
                 <Experience 
                 icon={<GlobeIcon />}
                 darkIconColor="#48bfe3"
